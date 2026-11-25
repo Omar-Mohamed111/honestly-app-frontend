@@ -2,7 +2,7 @@
 // Every request sends cookies, because the JWT lives in an HttpOnly
 // cookie (access_token) that JavaScript is not allowed to read.
 
-export const API_URL = "https://honestly-app-backend.vercel.app";
+export const API_URL = "";
 
 export async function request(path, { method = "GET", body } = {}) {
   const response = await fetch(API_URL + path, {
